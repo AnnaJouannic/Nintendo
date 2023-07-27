@@ -8,7 +8,7 @@ public class Achat {
 	
 	
 	
-	protected Achat(model.Jeu jeu, String date, double prix) {
+	public Achat(Jeu jeu, String date, double prix) {
 		Jeu = jeu;
 		this.date = date;
 		this.prix = prix;
