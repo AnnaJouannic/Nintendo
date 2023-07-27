@@ -1,6 +1,9 @@
 package test;
 
 import model.Jeu;
+
+import java.time.LocalDate;
+
 import model.Adresse;
 import model.Boutique;
 import model.Client;
@@ -15,19 +18,17 @@ public class Test {
 
 		
 		Boutique b1 = new Boutique("Super U",a1);
-		Client c1 = new Client("John", "Doe");
-		Client c2 = new Client("Jane", "Doe");
+		Client cl1 = new Client("John", "Doe");
+		Client cl2 = new Client("Jane", "Doe");
 		
 		
-
-		
-		Console c1 = new Console ("Switch");
-		Console c2 = new Console ("XBox");
-		Jeu j1 = new Jeu ("Zelda", c1 );
-		Jeu j2 = new Jeu ("The_Witcher", c1);
-		Jeu j3 = new Jeu ("Animal_crossing", c1);
-		Jeu j4 = new Jeu ("Fortnite", c2);
-		Jeu j5 = new Jeu ("Halo", c2);
+		Console co1 = new Console ("Switch",300,LocalDate.of(2015, 12, 31));
+		Console co2 = new Console ("XBox",400,LocalDate.of(2015, 12, 31));
+		Jeu j1 = new Jeu ("Zelda", co1 );
+		Jeu j2 = new Jeu ("The_Witcher", co1);
+		Jeu j3 = new Jeu ("Animal_crossing", co1);
+		Jeu j4 = new Jeu ("Fortnite", co2);
+		Jeu j5 = new Jeu ("Halo", co2);
 
 	}
 
