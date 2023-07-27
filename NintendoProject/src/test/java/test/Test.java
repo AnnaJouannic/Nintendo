@@ -11,6 +11,10 @@ import model.Hybride;
 import model.Jeu;
 import model.Salon;
 
+import java.util.Collections;
+
+import model.Achat;
+
 public class Test {
 
 	public static void main(String[] args) {
